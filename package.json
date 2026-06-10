@@ -1,4 +1,6 @@
 {
+    "name": "algoritmizator",
+    "description": "Frontend for Algoritmizátor — a gamified algorithms learning platform.",
     "private": true,
     "type": "module",
     "scripts": {

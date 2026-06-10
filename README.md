@@ -1,74 +1,108 @@
+<div align="center">
+
+<img src="storage/app/public/avatars/logo.png" alt="Algoritmizátor logo" width="120" />
+
 # Algoritmizátor
-[![Algoritmizator Test Pipeline](https://github.com/Jxn01/algoritmizator/actions/workflows/test.yml/badge.svg)](https://github.com/Jxn01/algoritmizator/actions/workflows/test.yml)
 
-Ez a projekt egy webes alkalmazás, amelynek célja, hogy a felhasználók játékos módon tanulhassák meg az algoritmusokat.
+**A gamified web platform for learning algorithms and data structures.**
 
-## A projekt célja
+[![Test Pipeline](https://github.com/Jxn01/algoritmizator/actions/workflows/test.yml/badge.svg)](https://github.com/Jxn01/algoritmizator/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Laravel](https://img.shields.io/badge/Laravel-11-FF2D20?logo=laravel&logoColor=white)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?logo=php&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?logo=tailwind-css&logoColor=white)
 
-Az alkalmazás célja, hogy a felhasználók számára élvezetes és interaktív módon tanítsa meg az algoritmusokat. A felhasználók különböző szintű feladatokat oldhatnak meg, amelyek segítenek nekik megérteni és elsajátítani az algoritmusok működését. Minél több feladatot oldanak meg, annál több pontot és szintet érnek el.
+</div>
 
-## Felhasználói élmény
+---
 
-### Az alkalmazás működése
+Algoritmizátor is a web application that teaches algorithms and data structures in a
+playful, interactive way. Learners work through lessons, take quizzes, solve coding
+tasks, and earn experience points to level up — turning a traditionally dry subject
+into a game.
 
-A felhasználók regisztrálhatnak és bejelentkezhetnek az alkalmazásba. A bejelentkezés után a felhasználók elérhetik a feladatokat, amelyeket megoldhatnak. Minden feladat megoldása után a felhasználók pontokat kapnak, amelyek segítenek nekik a szintlépésben. A szintlépés lehetővé teszi a felhasználók számára, hogy újabb és nehezebb feladatokat oldjanak meg.
+> This project was developed as my **BSc thesis** at ELTE (Eötvös Loránd University,
+> Faculty of Informatics). The full thesis (in Hungarian) is available here:
+> [Dokumentáció.pdf](Dokument%C3%A1ci%C3%B3.pdf).
 
-### Szintlépési rendszer
+## Features
 
-A szintlépési rendszer a felhasználók előrehaladását követi. Minél több pontot szereznek a felhasználók, annál magasabb szintre léphetnek. A szintlépés motiválja a felhasználókat, hogy folytassák a tanulást és a fejlődést.
+- **Gamified learning** — earn XP for completed tasks and climb through levels; an
+  experience-based progression system unlocks harder material as you advance.
+- **Structured lessons** — content is organised into lessons and sub-lessons, written
+  in Markdown and rendered in-app.
+- **Interactive quizzes** — multiple-choice and short-answer questions with automatic
+  evaluation and attempt history.
+- **In-browser code editor** — coding tasks are solved in an embedded
+  [CodeMirror](https://codemirror.net/) editor with syntax highlighting for C/C++,
+  Java, Python and JavaScript.
+- **Social system** — search for other users, send and accept friend requests, and
+  track friends' progress, with live online/offline status.
+- **User accounts** — registration, login, email verification, password reset and
+  avatar uploads, all built on Laravel's authentication.
+- **Profiles & progress tracking** — every user has a profile showing their level,
+  XP, successful attempts and friends.
 
-### Hitelesítési és közösségi rendszer
+## Topics covered
 
-Az alkalmazásban a felhasználók regisztrálhatnak és bejelentkezhetnek. A bejelentkezett felhasználók hozzáférhetnek a profiljukhoz, ahol nyomon követhetik a haladásukat, megtekinthetik a barátaikat és a baráti kéréseiket. A közösségi funkciók lehetővé teszik a felhasználók számára, hogy kapcsolatba lépjenek más felhasználókkal, megosszák a haladásukat és segítséget kérjenek.
+The learning material spans a full introductory algorithms curriculum:
 
-## Fejlesztői információk
+| Category | Topics |
+| --- | --- |
+| **Sorting algorithms** | bubble · insertion · selection · merge · quick · heap · counting · radix · bucket sort |
+| **Data structures** | arrays · lists · stacks · queues · trees · graphs · hash tables |
+| **Graph algorithms** | graph representations · breadth-first search · depth-first search · shortest paths |
+| **C fundamentals** | pointers · memory management |
 
-### Technológiai stack
+## Tech stack
 
-- Laravel: A backend szerver és az API kiszolgálására használt keretrendszer.
-- React: A frontend felhasználói felület készítésére használt könyvtár.
-- TailwindCSS: A felhasználói felület stílusának kialakítására használt CSS keretrendszer.
-- CodeMirror: A kódszerkesztő funkciók biztosítására használt könyvtár.
-- InertiaJS: A Laravel és React közötti sima integráció biztosítására használt könyvtár.
-- MySQL: Az adatok tárolására használt adatbázis rendszer.
-- Laravel Eloquent ORM: Az adatbázis műveletek egyszerűsítésére használt ORM.
+| Layer | Technology |
+| --- | --- |
+| Backend | [Laravel 11](https://laravel.com/) (PHP 8.2) |
+| Frontend | [React 18](https://react.dev/) |
+| Backend ⇄ Frontend | [Inertia.js](https://inertiajs.com/) |
+| Styling | [Tailwind CSS](https://tailwindcss.com/) |
+| Code editor | [CodeMirror 6](https://codemirror.net/) |
+| Database | MySQL via [Eloquent ORM](https://laravel.com/docs/eloquent) |
+| Build tooling | [Vite](https://vitejs.dev/) |
+| Testing | [PHPUnit](https://phpunit.de/) |
+| Monitoring | [Laravel Telescope](https://laravel.com/docs/telescope) |
 
-### Tesztelés és monitoring
+## Getting started
 
-- PHPUnit: A backend kód tesztelésére használt keretrendszer.
-- Laravel Telescope: A backend teljesítményének és állapotának monitorozására használt eszköz.
+### Prerequisites
 
-### Fejlesztői környezet
+- PHP 8.2+
+- Composer
+- Node.js 18+ and npm
+- MySQL
 
-A fejlesztői környezet beállításához szükséges a következő lépések végrehajtása:
-
-1. Klónozd le a projektet a GitHub repository-ból.
-2. Telepítsd a Composer és a NodeJS csomagokat a következő paranccsal:
+### Installation
 
 ```bash
+# 1. Clone the repository
+git clone https://github.com/Jxn01/algoritmizator.git
+cd algoritmizator
+
+# 2. Install dependencies
 composer install
 npm install
-```
 
-3. Hozz létre egy `.env` fájlt a `.env.example` fájl alapján:
-
-```bash
+# 3. Create your environment file
 cp .env.example .env
-```
 
-4. Generálj egy alkalmazás kulcsot a következő paranccsal:
-
-```bash
+# 4. Generate an application key
 php artisan key:generate
 ```
 
-5. Állítsd be az adatbázis kapcsolatot és az email szerver konfigurációját a `.env` fájlban:
+Configure the database and mail settings in `.env`:
 
-```bash
+```dotenv
 DB_CONNECTION=mysql
-DB_HOST=
-DB_PORT=
-DB_DATABASE=
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=algoritmizator
 DB_USERNAME=
 DB_PASSWORD=
 
@@ -79,125 +113,86 @@ MAIL_USERNAME=
 MAIL_PASSWORD=
 MAIL_ENCRYPTION=
 MAIL_FROM_ADDRESS=
-MAIL_FROM_NAME=
+MAIL_FROM_NAME="${APP_NAME}"
 ```
 
-6. Migráld az adatbázis táblákat a következő paranccsal:
+Run the migrations and create the storage symlink (used for avatars and the logo):
 
 ```bash
 php artisan migrate
+php artisan storage:link
 ```
 
-7. Állíts be egy cron job-ot a Laravel Task Scheduler futtatásához a következő paranccsal:
+### Running the app
+
+In two separate terminals:
 
 ```bash
+php artisan serve   # backend  → http://localhost:8000
+npm run dev         # frontend dev server (Vite)
+```
+
+Then open <http://localhost:8000>.
+
+> **Note:** the frontend assumes the app is served under the `/algoritmizator`
+> path (e.g. `http://localhost:8000/algoritmizator`). This mirrors the production
+> deployment, where the app lives in an `/algoritmizator` sub-directory — easily
+> reproduced locally with a symlink.
+
+### Scheduled tasks
+
+Some features (expiring password resets, marking inactive users offline) rely on
+Laravel's scheduler. In production, add a single cron entry:
+
+```cron
 * * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1
 ```
 
-8Indítsd el a Laravel szerver a következő paranccsal:
+## Testing
 
-```bash
-php artisan serve
-```
-
-9. Indítsd el a React alkalmazást a következő paranccsal:
-
-```bash
-npm run dev
-```
-
-10. Nyisd meg a böngészőt a `http://localhost:8000` címen.
-
-### Tesztelés
-
-1. A teszt adatbázis beállításához állítsd be a következőket a phpunit.xml fájlban:
-
-```xml
-<php>
-    <env name="DB_CONNECTION" value="mysql"/>
-    <env name="DB_DATABASE" value="algoritmizator_test"/>
-    <env name="DB_HOST" value="127.0.0.1"/>
-    <env name="DB_PORT" value="3306"/>
-    <env name="DB_USERNAME" value=""/>
-    <env name="DB_PASSWORD" value=""/>
-</php>
-```
-
-2. A backend kód teszteléséhez használd a PHPUnit keretrendszert a következő paranccsal:
+The backend is covered by PHPUnit feature and unit tests (see [`tests/`](tests)).
 
 ```bash
 php artisan test
 ```
 
-A Laravel Telescope alkalmazás segítségével monitorozhatod a backend teljesítményét és állapotát a `http://localhost:8000/telescope` címen.
+Tests expect a dedicated MySQL database. Configure it in
+[`phpunit.xml`](phpunit.xml) (e.g. `algoritmizator_test`). The same suite runs
+automatically on every push and pull request via
+[GitHub Actions](.github/workflows/test.yml).
 
-### Üzembehelyezés
-
-Az alkalmazás üzembehelyezéséhez szükséges a következő lépések végrehajtása:
-
-1. Állítsd be az `.env` fájlban az adatbázis kapcsolatot, az email szerver konfigurációját és a környezeti változókat:
-
-```bash
-APP_ENV=production
-APP_DEBUG=false
-APP_URL=https://example.com
-
-DB_CONNECTION=mysql
-DB_HOST=
-DB_PORT=
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
-
-MAIL_MAILER=smtp
-MAIL_HOST=
-MAIL_PORT=
-MAIL_USERNAME=
-MAIL_PASSWORD=
-MAIL_ENCRYPTION=
-MAIL_FROM_ADDRESS=
-MAIL_FROM_NAME=
-```
-
-2. Állítsd be a Laravel cache és konfigurációs fájlokat a következő paranccsal:
+## Deployment
 
 ```bash
+# Cache configuration and routes
 php artisan config:cache
 php artisan route:cache
 php artisan view:cache
-```
 
-3. Buildeld le a React alkalmazást a következő paranccsal:
-
-```bash
+# Build the frontend assets
 npm run build
 ```
 
-4. Állítsd be a React alkalmazást a következő paranccsal:
+Serve `public/` behind a web server such as
+[Apache](https://httpd.apache.org/), [Nginx](https://www.nginx.com/) or
+[Caddy](https://caddyserver.com/). Make sure `APP_ENV=production` and
+`APP_DEBUG=false` in the production `.env`, and that the database, mail and web
+servers are configured before going live.
 
-```bash
-npm run prod
-```
+## Documentation
 
-5. Állítsd be a Laravel szerver konfigurációját a következő paranccsal:
+- **Thesis (Hungarian):** [Dokumentáció.pdf](Dokument%C3%A1ci%C3%B3.pdf)
+- **API docs:** generated with [Doxygen](https://www.doxygen.nl/) from the source
+  using the included [`Doxyfile`](Doxyfile) (`doxygen Doxyfile`).
 
-```bash
-php artisan serve --host=
-```
+## License
 
-6. Állítsd be a webkiszolgálót a következőképpen: [Apache](https://httpd.apache.org/), [Nginx](https://www.nginx.com/), [Caddy](https://caddyserver.com/).
+This project is licensed under the [MIT License](LICENSE).
 
-Megjegyzések:
+## Contact
 
-- Az alkalmazás üzembehelyezése előtt győződj meg róla, hogy az adatbázis, a webkiszolgáló és az email kiszolgáló megfelelően konfigurálva van.
-- Az alkalmazás üzembehelyezése előtt győződj meg róla, hogy a Laravel cache és konfigurációs fájlok frissítve vannak.
-- Az alkalmazás frontend része azzal a feltételezéssel lett megírva, hogy a backend és a frontend azonos szerveren futnak, sőt, az index.php fájl az /algoritmizator mappában található. Ez könnyen megvalósítható egy mappahivatkozás létrehozásával.
+**Norbert Oláh**
 
-## Kapcsolat
-
-Ha bármilyen kérdésed vagy észrevételed van az alkalmazással kapcsolatban, kérlek vedd fel a kapcsolatot velem az alábbi email címen:
-
-- Email (inf.elte): [pst8ra@inf.elte.hu](mailto:pst8ra@inf.elte.hu)
-- Email (személyes): [jxn.personal@gmail.com](mailto:jxn.personal@gmail.com)
-- GitHub: [Jxn01](https://www.github.com/Jxn01)
+- Email: [jxn.personal@gmail.com](mailto:jxn.personal@gmail.com)
+- GitHub: [@Jxn01](https://github.com/Jxn01)
 - LinkedIn: [Jxn01](https://www.linkedin.com/in/jxn01)
