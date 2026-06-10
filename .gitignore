@@ -3,6 +3,7 @@
 /public/build
 /public/hot
 /public/storage
+/public/vendor
 /storage/*.key
 /vendor
 .env
@@ -18,3 +19,13 @@ yarn-error.log
 /.idea
 /.vscode
 docs
+
+# User-uploaded avatars (keep the bundled defaults only)
+/storage/app/public/avatars/*
+!/storage/app/public/avatars/default.png
+!/storage/app/public/avatars/logo.png
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
